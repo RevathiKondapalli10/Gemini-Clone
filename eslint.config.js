@@ -33,6 +33,11 @@ export default [
         'warn',
         { allowConstantExport: true },
       ],
+    }, 
+
+    env: {
+      browser: true, // Ensures browser-specific globals like `window` and `process` are allowed
+      node: true,    // Ensures Node.js globals are recognized
     },
   },
 ]

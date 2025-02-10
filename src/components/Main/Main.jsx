@@ -26,25 +26,25 @@ const Main = () => {
           <div>
             <div className="greet">
               <p>
-                <span>Hello, Dev...</span>
+                <span>Hello, Dev.</span>
               </p>
-              <p>How can I assist you today?</p>
+              <p>How can I help you today?</p>
             </div>
             <div className="cards">
               <div className="card">
-                <p>Discover hidden gems for your next adventure!</p>
+                <p>Suggest beautiful places to see on an upcoming road trip.</p>
                 <img src={assets.compass_icon} alt="Compass Icon" />
               </div>
               <div className="card">
-                <p>Unravel the mysteries of Artificial Intelligence.</p>
+                <p>Briefly summarize this concept:urban planning</p>
                 <img src={assets.bulb_icon} alt="Bulb Icon" />
               </div>
               <div className="card">
-                <p>Start a friendly chat and ask me anything!</p>
+                <p>Brainstorm team bonding activities for our work retreat</p>
                 <img src={assets.message_icon} alt="Message Icon" />
               </div>
               <div className="card">
-                <p>Need help with code? Let’s build something awesome!</p>
+                <p>Improve the readability of the following code</p>
                 <img src={assets.code_icon} alt="Code Icon" />
               </div>
             </div>
