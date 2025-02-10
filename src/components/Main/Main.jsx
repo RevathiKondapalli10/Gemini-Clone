@@ -68,30 +68,38 @@ const Main = () => {
           </div>
         )}
 
-        <div className="main-bottom">
-          <div className="search-box">
-            <input
-              onChange={(e) => setInput(e.target.value)}
-              value={input}
-              type="text"
-              placeholder="Enter a prompt here"
-              onKeyPress={(e) => {
-                if (e.key === "Enter") onSent();
-              }}
-            />
-            <div>
-              <img src={assets.gallery_icon} alt="Gallery Icon" />
-              <img src={assets.mic_icon} alt="Mic Icon" />
+<div className="main-bottom">
+  <div className="search-box">
+    <input
+      onChange={(e) => setInput(e.target.value)}
+      value={input}
+      type="text"
+      placeholder="Enter a prompt here"
+      onKeyPress={(e) => {
+        if (e.key === "Enter") onSent();
+      }}
+    />
+    <div>
+      <img src={assets.gallery_icon} alt="Gallery Icon" />
+      <img src={assets.mic_icon} alt="Mic Icon" />
+      {input ? (
+        <img
+          src={assets.send_icon}
+          alt="Send Icon"
+          onClick={() => {
+            console.log("Send button clicked!");
+            onSent();
+          }}
+        />
+      ) : null}
+    </div>
+  </div>
 
-             {input?<img src={assets.send_icon} alt="" onClick={onSent} />:null}
-            </div>
-          </div>
+  <p className="bottom-info">
+    Gemini may display inaccurate info, so double-check important details.
+  </p>
+</div>
 
-          <p className="bottom-info">
-            Gemini may display inaccurate info, so double-check important
-            details.
-          </p>
-        </div>
       </div>
     </div>
   );
